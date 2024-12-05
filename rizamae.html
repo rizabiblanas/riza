@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module">
+        import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+      
+        const widget = await Chatbox.initBubble({
+          agentId: 'cm4bd4jgn0m2c2056h0a68xmr',
+          
+         
+          contact: {
+            firstName: 'John',
+            lastName: 'Doe',
+            email: 'customer@email.com',
+            phoneNumber: '+33612345644',
+            userId: '42424242',
+          },
+         
+          initialMessages: [
+            'Hello Georges how are you doing today?',
+            'How can I help you ?',
+          ],
+         
+          context: "The user you are talking to is John. Start by Greeting him by his name.",
+        });
+      
+        
+        widget.open();
+      
+        
+        widget.close()
+      
+       
+        widget.toggle()
+      </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Delight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Rizarap Donut Delight!</h1>
+        <p>Your one-stop shop for delicious donuts!</p>
+    </header>
+
+    <main>
+        <section class="donut-flavors">
+            <h2 class="ganda" >Our Flavors</h2>
+            <div class="flavor">
+                <img src="choco.jpg" alt="Chocolate Donut">
+                <h3>Chocolate Glazed</h3>
+                <p>Rich chocolate glaze on a fluffy donut.</p>
+            </div>
+            <div class="flavor">
+                <img src="vanilla.webp" alt="Vanilla Donut">
+                <h3>Vanilla Sprinkles</h3>
+                <p>Classic vanilla donut topped with colorful sprinkles.</p>
+            </div>
+            <div class="flavor">
+                <img src="strawberry.jpg" alt="Strawberry Donut">
+                <h3>Strawberry Frosted</h3>
+                <p>Sweet strawberry frosting with a hint of cream.</p>
+            </div>
+            <div class="flavor">
+                <img src="blueberry.jpg" alt="Blueberry Donut">
+                <h3>Blueberry Cake</h3>
+                <p>Moist cake donut infused with real blueberries.</p>
+            </div>
+            <div class="flavor">
+                <img src="maple.jpg" alt="Maple Bacon Donut">
+                <h3>Maple Bacon</h3>
+                <p>Sweet maple glaze topped with crispy bacon bits.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer>
+        <p>&copy; 2023 Donut Delight. All rights reserved.</p>
+    </footer> -->
+</body>
+</html>

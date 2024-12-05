@@ -1,0 +1,68 @@
+body {
+    background-image: url(donut.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 100vh;
+}
+
+header {
+    background-color: lightpink;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-style: oblique;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+
+}
+
+h2 {
+    color: black;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .ganda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+main {
+    padding: 20px;
+}
+
+.donut-flavors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flavor {
+    background-color: steelblue;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+    font-size: 1.3em;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.flavor:hover {
+    background-color: lightcoral; 
+    transform: scale(1.05); 
+}
+
+.flavor img {
+    width: 100%;
+    border-radius: 8px;
+}
